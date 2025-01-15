@@ -30,4 +30,7 @@ install(FILES ${config_json} DESTINATION . )
 
 # copy compounds to final pack location
 file(GLOB STRING2_COMPOUNDS ${CMAKE_SOURCE_DIR}/compounds/*.json)
-file(COPY ${STRING2_COMPOUNDS} DESTINATION ${CMAKE_INSTALL_PREFIX}/json/${PROJECT_NAME})
+install(
+    COPY ${STRING2_COMPOUNDS}
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/json/${PROJECT_NAME}
+)
