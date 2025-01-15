@@ -1,0 +1,75 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "operators": [
+        {
+            "name": "String2::string_to_code_points",
+            "msMangle": "?string_to_code_points@String2@@YAXAEBVString@Amino@@AEAV?$MutablePtr@V?$Array@I@Amino@@@3@@Z",
+            "itaniumMangle": "_ZN7String221string_to_code_pointsERKN5Amino6StringERNS0_10MutablePtrINS0_5ArrayIjEEEE",
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "string",
+                    "portDirection": "input",
+                    "portType": "string",
+                    "portConvention": "byReferenceToPtr"
+                },
+                {
+                    "portName": "code_points",
+                    "portDirection": "output",
+                    "portType": "array<uint>",
+                    "portConvention": "byReferenceToMutablePtr"
+                }
+            ]
+        },
+        {
+            "name": "String2::code_points_to_string",
+            "msMangle": "?code_points_to_string@String2@@YAXAEBV?$Array@I@Amino@@AEAVString@3@@Z",
+            "itaniumMangle": "_ZN7String221code_points_to_stringERKN5Amino5ArrayIjEERNS0_6StringE",
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "code_points",
+                    "portDirection": "input",
+                    "portType": "array<uint>",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "string",
+                    "portDirection": "output",
+                    "portType": "string",
+                    "portConvention": "byReferenceToPtr"
+                }
+            ]
+        },
+        {
+            "name": "String2::code_points_to_string",
+            "msMangle": "?code_points_to_string@String2@@YAXIAEAVString@Amino@@@Z",
+            "itaniumMangle": "_ZN7String221code_points_to_stringEjRN5Amino6StringE",
+            "isDefaultOverload": "true",
+            "cancellationPolicy": "Unsafe",
+            "ports": [
+                {
+                    "portName": "code_points",
+                    "portDirection": "input",
+                    "portType": "uint",
+                    "portConvention": "byValue"
+                },
+                {
+                    "portName": "string",
+                    "portDirection": "output",
+                    "portType": "string",
+                    "portConvention": "byReferenceToPtr"
+                }
+            ]
+        }
+    ]
+}

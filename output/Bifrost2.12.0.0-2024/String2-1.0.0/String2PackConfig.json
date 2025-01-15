@@ -1,0 +1,22 @@
+{
+    "AminoConfigurations": [
+        {
+            "vendorName": "",
+            "libraryVersion": "1.0.0",
+            "libraryName": "String2",
+            "sharedLibs": [
+                {
+                    "path": "./lib",
+                    "files": [
+                        "String2Ops"
+                    ]
+                }
+            ],
+            "jsonLibs": [
+                {
+                    "path": "./json/String2"
+                }
+            ]
+        }
+    ]
+}
