@@ -5,7 +5,7 @@ Currently nodes like `get_from_string`, `set_in_string`, or `slice_string` opera
 By converting a string to its code points first, we can get/set the n-th character in a string, regardless of the byte position and byte length.
 
 # Installation
-If you are on Windows, use Maya 2024 and Bifrost 2.12.0.0, you are in luck! Download the prebuild pack from [here](output/Bifrost2.12.0.0-2024) and point your `BIFROST_LIB_CONFIG_FILES` to the `String2PackConfig.json`.
+If you are on Windows and use Bifrost 2.12.0.0, you are in luck! Download the prebuild pack from [here](output/Bifrost2.12.0.0) and point your `BIFROST_LIB_CONFIG_FILES` to the `String2PackConfig.json` (tested on Maya 2024 and Maya 2025).
 Else, follow the instructions for building from the [Autodesk website](https://help.autodesk.com/view/BIFROST/ENU/?guid=Bifrost_DevHelp_GettingStarted_Tutorials_GettingStartedWalkThrough_Build_html)
 
 # Operators:
